@@ -423,7 +423,7 @@
                 if (r.ok) { 
                     const d = await r.json(); 
                     dot.classList.add('connected'); 
-                    text.textContent = 'Connected ' + (d.workflow_loaded ? 'OK' : '(No workflow)'); 
+                    text.textContent = 'Connected ' + (d.txt2img ? 'OK' : '(No workflow)'); 
                 } else throw new Error(); 
             } catch (e) { 
                 dot.classList.add('error'); 
